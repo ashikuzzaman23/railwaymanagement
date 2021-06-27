@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin">
+   <children>
+      <Text layoutX="219.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Train Mangement System">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="66.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Train Name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="66.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="320.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="64.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start time:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="320.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End time:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="64.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A\C (Normal) Compartment:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A\C (Cabin) Compartment:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non-A\C Compartment:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="94.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat/Compartment:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="94.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat/Compartment:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="94.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cabin/Compartment:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="348.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fare/Seat:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="348.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fare/Seat:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="348.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fare/Cabin:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="train_name" layoutX="175.0" layoutY="65.0" prefHeight="25.0" prefWidth="228.0" />
+      <TextField fx:id="from" layoutX="120.0" layoutY="100.0" prefHeight="25.0" prefWidth="169.0" />
+      <TextField fx:id="to" layoutX="353.0" layoutY="100.0" prefHeight="25.0" prefWidth="169.0" />
+      <TextField fx:id="start_time" layoutX="150.0" layoutY="135.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="end_time" layoutX="395.0" layoutY="136.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="ac_normal" layoutX="268.0" layoutY="174.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="ac_cabin" layoutX="251.0" layoutY="240.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="non_ac" layoutX="232.0" layoutY="312.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="ac_normal_seat" layoutX="260.0" layoutY="205.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="ac_normal_fare" layoutX="435.0" layoutY="206.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="ac_cabin_fare" layoutX="438.0" layoutY="274.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="non_ac_fare" layoutX="438.0" layoutY="344.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="ac_cabin_cabin" layoutX="251.0" layoutY="274.0" prefHeight="25.0" prefWidth="90.0" />
+      <TextField fx:id="non_ac_seat" layoutX="242.0" layoutY="344.0" prefHeight="25.0" prefWidth="90.0" />
+      <Button fx:id="submit" layoutX="141.0" layoutY="396.0" mnemonicParsing="false" onAction="#submitAction" text="Submit" />
+      <ChoiceBox fx:id="ampm1" layoutX="250.0" layoutY="136.0" prefHeight="25.0" prefWidth="54.0" />
+      <ChoiceBox fx:id="ampm2" layoutX="501.0" layoutY="136.0" prefHeight="25.0" prefWidth="54.0" />
+      <Label fx:id="msz" layoutX="169.0" layoutY="431.0" prefHeight="27.0" prefWidth="272.0" text="Provide all informations correctly" textAlignment="CENTER" textFill="#da1c1c" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="delete" layoutX="279.0" layoutY="396.0" mnemonicParsing="false" onAction="#deleteAction" text="Delete" />
+      <Button layoutX="428.0" layoutY="396.0" mnemonicParsing="false" onAction="#backAction" text="Back" />
+   </children>
+</AnchorPane>

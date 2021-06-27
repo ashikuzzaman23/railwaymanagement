@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.User1">
+   <children>
+      <Label layoutX="75.0" layoutY="80.0" text="Non-AC:" />
+      <Label layoutX="75.0" layoutY="178.0" text="AC Normal:" />
+      <Label layoutX="75.0" layoutY="275.0" text="AC Cabin:" />
+      <TextField fx:id="nonACSeats" layoutX="157.0" layoutY="126.0" promptText="Enter Required Seats" />
+      <TextField fx:id="ACSeats" layoutX="157.0" layoutY="215.0" promptText="Enter Required Seats" />
+      <TextField fx:id="ACCabins" layoutX="157.0" layoutY="308.0" promptText="Enter Required Seats" />
+      <Button layoutX="75.0" layoutY="340.0" mnemonicParsing="false" onAction="#bookAction" text="Book" />
+      <Label fx:id="err1" layoutX="360.0" layoutY="80.0" text="Not Enough Seats Left" textFill="#dd0b0b" />
+      <Label fx:id="err2" layoutX="360.0" layoutY="178.0" text="Not Enough Seats Left" textFill="#d01313" />
+      <Label fx:id="err3" layoutX="360.0" layoutY="275.0" text="No Cabins Left" textFill="#d71010" />
+      <Button layoutX="75.0" layoutY="383.0" mnemonicParsing="false" onAction="#backAction" text="Back" />
+      <TextField fx:id="nonACFare" layoutX="157.0" layoutY="76.0" />
+      <TextField fx:id="ACCabinFare" layoutX="157.0" layoutY="271.0" />
+      <TextField fx:id="ACNormalFare" layoutX="157.0" layoutY="174.0" />
+      <Label fx:id="msg2" layoutX="360.0" layoutY="219.0" text="Successfully Booked" textFill="#1e5b1d" visible="false" />
+      <Label fx:id="msg1" layoutX="360.0" layoutY="130.0" text="Successfully Booked" textFill="#1e5b1d" visible="false" />
+      <Label fx:id="msg3" layoutX="360.0" layoutY="312.0" text="Successfully Booked" textFill="#1e5b1d" visible="false" />
+   </children>
+</AnchorPane>
